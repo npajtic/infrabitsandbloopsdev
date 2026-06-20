@@ -19,22 +19,18 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Infra Bits & Bloops: Personal Blog"
-email: user@company.com
+email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Infra Bits & Bloops is my personal tech blog where I record my learnings of different technologies related to building infrastracture in Cloud.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://infrabitsnbloops.dev" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
+#twitter_username: ""
 github_username:  npajtic
 
 # Build settings
-theme: "minimal-mistakes-jekyll"
+theme: minima
 plugins:
   - jekyll-feed
-
-minimal_mistakes_skin: "dark"
-
-include: ["_pages"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,23 +51,3 @@ include: ["_pages"]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      show_date: true
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
